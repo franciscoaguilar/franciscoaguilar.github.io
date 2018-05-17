@@ -3,36 +3,144 @@
 
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.o">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>My portfolio</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/styles.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<body>
-  <div class="banner row" id="banner">
-    <div class="parallax text-center" style="background-image: url(img/computer-cookies.jpg);">
+<body
+
+data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <header id="jumbotron">
+    <div class="intro text-center">
+    <div class="overlay">
+    <div class="parallax text-center">
       <div class="parallax-pattern-overlay">
-        <div class="container text-center " style="height:900px;padding-top:170px; ">
-          <div class="wow swing">
-            <a href="#"><img class="resize-portrait img-circle" src="img/portrait.jpeg" alt="portriat"></a>
-          </div>
-          <div class="letters">
+        <div class="container text-center " style="height:800px;padding-top:170px; ">
+            <a href="#"><img class="resize-portrait img-circle  " src="img/portrait.jpeg" alt="portriat"></a>
+
+
+
           <div class="row ">
+            <div class="col-md-12">
+              <div class="letters ">
               <h1> I'm
               <span
                  class="txt-rotate"
                  data-period="2000"
-                 data-rotate='[ "an aspiring developer", "an aspiring designer", "Francisco Aguilar" ]'></span>
+                 data-rotate='[ "an aspiring developer", "an aspiring designer", "Francisco Aguilar" ]'>
+                 </span>
               </h1>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="btnjumbo">
+                <a href="#about" class="headerbtn btn btn-skin btn-lg btn-scroll">LEARN MORE</a>
+              </div>
+            </div>
+            </div>
           </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</header>
+
+  <nav class="navbar navbar-fixed-top ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">FRANCISCO <br> AGUILAR</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section: about -->
+  <div id="about" class="home-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+
+          <div class="section-heading text-center">
+              <h2>ABOUT ME</h2>
+              <hr>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+
+          <img src="img/hero.jpg" class="img-responsive img-circle" alt="" />
+        </div>
+
+        <div class="col-md-6 ">
+              <div class="icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <div class="icon-text">
+                <h3 class="txt-tl">Geek Wise Student</h3>
+                <p class="txt-para">Currently a geekwise student  </p>
+              </div>
+          </div>
+          <div class="col-md-6 ">
+                <div class="icon">
+                  <i class="fas fa-briefcase-medical"></i>
+                </div>
+                <div class="icon-text">
+                  <h3 class="txt-tl">EMT certified</h3>
+                  <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                  <div class="icon">
+                    <i class="fas fa-fire"></i>
+                  </div>
+                  <div class="icon-text">
+                    <h3 class="txt-tl">Wildland Firefighter</h3>
+                    <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                  </div>
+              </div>
+              <div class="col-md-6 col-md-offset-6">
+          <a href="#portfolio" class="pbtn btn btn-skin btn-lg btn-scroll">MY PORTFOLIO</a>
         </div>
         </div>
       </div>
@@ -40,61 +148,62 @@
   </div>
 
 
-<div class="row ">
-  <div class="col-md-12 red ">
-    <iframe src="https://360player.io/p/kMysdM/"  width=100% height=500 allowfullscreen data-token="kMysdM">
-    <p>al</p>
-    </iframe>
-
-  </div>
-  </div>
-
-<script src="https://360player.io/static/dist/scripts/embed.js" async></script>
 
 
-<section class="p-0" id="portfolio">
+
+
+<div class="p-0" id="portfolio">
       <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
+        <div class="section-heading text-center">
+            <h2>RECENT WORK</h2>
+            <hr>
+        </div>
+
+
           <div class="col-md-4 col-md-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+            <a class="portfolio-box" href="https://preview.c9users.io/francisco8/finalproject-caliswrapgarage/index.html">
               <img class="img-fluid img-thumbnail" src="img/portfolio/calis-capture.PNG" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
+
                   <div class="project-category text-faded">
-                    Category
+                    Website
                   </div>
                   <div class="project-name">
-                    Project Name
+                    CalisWrapGarage
                   </div>
                 </div>
+
               </div>
             </a>
           </div>
+
           <div class="col-md-4 col-md-6">
-            <a class="portfolio-box " href="img/portfolio/fullsize/2.jpg">
+            <a class="portfolio-box " href="http://127.0.0.1:64364/">
               <img class="img-fluid img-thumbnail" src="img/portfolio/restaurante-capture.PNG" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Website
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Restuarante
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-4 col-md-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+            <a class="portfolio-box" href="http://127.0.0.1:64299/">
               <img class="img-fluid img-thumbnail" src="img/portfolio/petstore-capture.PNG" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
+
                   <div class="project-category text-faded">
-                    Category
+                    Website
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Pet-Store
                   </div>
                 </div>
               </div>
@@ -102,73 +211,67 @@
           </div>
         </div>
       </div>
-    </section>
 
 
 
-
-  <!-- CONTACT -->
-  <div class="container-fluid" id="contact">
-  <div class="containter">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-uppercase">	Get in Touch	</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="section-title center">
+        <h2>Get In Touch</h2>
+        <hr>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <form action="" method="post" role="form" class="contactForm">
-              <div class="row">
-
-
-                <div class="col-md-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-md-12 ">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                </div>
-
+      <div class="col-md-8 col-md-offset-2">
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                <p class="help-block text-danger"></p>
               </div>
-            </form>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
           </div>
-<div class="col-md-6">
-  <img class="mail" src="img/email.png" alt="">
-</div>
-
-
-      </div>
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-default">Send Message</button>
+        </form>
     </div>
+  </div>
+</div>
+</div>
+<!-- start section footer -->
+<div id="footer" class="text-center">
+  <div class="container">
+    <div class="info">
+      <p>FRANCISCO AGUILAR <hr> 1345 skywalk Fresno CA. <hr> (559)123-45-56</p>
+    </div>
+    <div class="socials-media text-center">
+
+      <ul class="list-unstyled">
+        <li><a href="https://www.facebook.com/"><i class=" fa fa-facebook-square"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
+        <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-square"></i></a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- ON SCREEN LETTERS -->
 <script>
@@ -249,5 +352,3 @@
 
     <div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1598.7775078851257!2d-119.78811673971451!3d36.73324690241304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809460a5cfdf4b6b%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1526340212760" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-</div>
