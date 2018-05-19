@@ -1,6 +1,6 @@
 
 
- .headerbtn{
+ #jumbotron .btn{
 	color: white;
 	font-weight: 600;
 	background-color: black;
@@ -79,14 +79,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 
 /* ABOUT */
 #about{
-  background-color: rgba(149,147,147,0.2);
-	height: 700px;
+  background-color: #b5b5b5;
+	max-height: auto;
+  width: AUTO;
 
 }
 #about h2{
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 600;
-	margin: 70px;:
+	margin: 50px;:
 }
 #about a{
 	color: white;
@@ -94,7 +95,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 	background-color: black;
 	margin: auto;
 }
-#about btn{
+#about .btn{
 	margin-bottom: 40px;
 }
 
@@ -117,12 +118,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
   padding: 0px 25px 25px 0px;
 }
 
-.p-0 {
 
- height: 700px;
- background-color:  #f7f7f7;;
-
-}
 #quote {
 	color: #fff;
 	background: url(../img/computer-cookies.jpg) no-repeat center top;
@@ -171,15 +167,25 @@ label {
 	float: left;
 }
 
+/* PORTFOLIO */
+#portfolio .p-0 .btn {
+  margin-bottom: 40px;
+}
+#portfolio  .p-0 {
+
+ max-height: auto;
+ background-color:  #b5b5b5;;
+}
 #portfolio h2{
 
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 600;
-	margin: 70px;:
+	margin: 50px;:
+  color: #FFF;
 }
 
 .portfolio-box {
-  position: absolute;
+  position: relative;
   display: inline-block;
   max-width: 650px;
   margin: 50px auto;
@@ -227,15 +233,7 @@ label {
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-#portfolio .portbtn{
-	color: white;
-	font-weight: 600;
-	background-color: black;
-	margin: auto;
-	margin-top: 45vh;
 
-
-}
 /* Contact Section */
 #contact {
 	color: #fff;
@@ -410,9 +408,9 @@ color: #2c3e50;
 @media (min-width: 768px ){
 	.letters h1{
 		font-family: 'Cinzel Decorative', cursive;
-		font-size: 80px;
+		font-size: 60px;
 		color: rgba(34,0,0);
-		max-width: 100%;
+		max-width: 60%;
 	}
 	.resize-portrait{
 		max-height: 40vh;
@@ -423,6 +421,33 @@ color: #2c3e50;
 	#quote p{
 		font-size: 50px;
 	}
+  #about{
+    background-color: #b5b5b5;
+  	height: 75VH;
+    width: AUTO;
+
+  }
+
+}
 
 
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
 }
