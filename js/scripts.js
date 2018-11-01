@@ -1,3 +1,4 @@
+
 // get form values
 // function getInput(id) {
 //   return document.getElementById(id).value;
@@ -35,7 +36,35 @@ function storeData(name , phone, email, message)
   })
 }
 });
+var showText = function (target, message, index, interval) {
+  if (index < message.length) {
+    $(target).append(message[index++]);
+    setTimeout(function () { showText(target, message, index, interval); }, interval);
+  }
+}
+var letters = document.getElementById('letters');
+var learn = document.getElementById('learn');
 
+learn.addEventListener('click', () =>
+{
+  letters.style.display = 'flex';
+  letters.style.justifyContent = 'center';
+  letters.style.alignItems = 'center';
+  
+  console.log('apple');
+  learn.style.display = 'none';
+})
+
+// $(function () {
+//   showText("#msg", "Hello, World!", 0, 200);
+// });
+// var typed = new Typed('.element', {
+//   strings: ["First sentence.", "Second sentence."],
+//   typeSpeed: 30
+// });
+// $('#msg').onload(function(){
+//
+// })
 // function formSub(e) {
 //   e.preventDefault();
 //   // get form input

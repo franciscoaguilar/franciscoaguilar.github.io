@@ -4,8 +4,22 @@
 	color: white;
 	font-weight: 600;
 	background-color: black;
-	margin: auto;
+  margin-top: 17vh;
+
 }
+
+
+#jumbotron #letters{
+
+     display: none;
+     font-size: 40px;
+    height: 50%;
+}
+ .fa-github{
+  font-size: 40px;
+    margin-top: 17vh;
+}
+
 
 
 /* navbar header */
@@ -42,7 +56,7 @@ nav ul li a {
 .intro {
 	display: table;
 	width: 100%;
-	height: auto;
+	height: 50vh;
 	text-align: center;
 	color: #fff;
 	background: url(../img/fire-bg.jpg) no-repeat center center;
@@ -58,6 +72,7 @@ nav ul li a {
 	background: -webkit-linear-gradient(left, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', endColorstr='#d94977c2', GradientType=1 ); /* IE6-9 */
+height: inherit;
 }
 
 
@@ -381,16 +396,6 @@ color: #2c3e50;
 	color:black;
 	font-size: 16px;
 }
-
-}
-
-/* when mobile */
-.letters h1{
-	font-family: 'Cinzel Decorative', cursive;
-	font-size: 50px;
-	color: rgba(34,0,0);
-
-}
 .resize-portrait{
 	max-height: 100vh;
 	max-width: 77vw;
@@ -406,14 +411,13 @@ color: #2c3e50;
 
 
 
+
+
+
+
 /* when full screen */
 @media (min-width: 768px ){
-  .letters h1{
-  	font-family: 'Cinzel Decorative', cursive;
-  	font-size: 50px;
-  	color: rgba(34,0,0);
 
-  }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 18px;
   }
@@ -421,18 +425,12 @@ color: #2c3e50;
     font-size: 22px;
   }
 
-	.letters h1{
-		font-family: 'Cinzel Decorative', cursive;
-		font-size: 60px;
-		color: rgba(34,0,0);
-		max-width: 60%;
-	}
 	.resize-portrait{
 		max-height: 40vh;
 		max-width: 37vw;
-		opacity: 1.0;
     padding-top: 40px;
      border-radius: 50%;
+     	opacity: 0.3;
 	}
 
 	#quote p{
@@ -449,7 +447,7 @@ color: #2c3e50;
 
 
 /* For desktop: */
-/* .col-1 {width: 8.33%;}
+.col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -460,11 +458,11 @@ color: #2c3e50;
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;} */
-/*
+.col-12 {width: 100%;}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
     }
-} */
+}

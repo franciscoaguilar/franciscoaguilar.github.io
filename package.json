@@ -18,5 +18,8 @@
   "homepage": "https://github.com/franciscoaguilar/franciscoaguilar.github.io#readme",
   "devDependencies": {
     "dotenv": "^6.1.0"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.9"
   }
 }

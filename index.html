@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
+  <script type="text/javascript" src="node_modules/typed.js/lib/typed.js">
+  </script>
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/keyframes.css" rel="stylesheet">
 
@@ -32,39 +32,41 @@
 
   <header id="jumbotron">
     <div class="intro text-center">
-    <div class="overlay">
-    <div class="parallax text-center">
-      <div class="parallax-pattern-overlay">
-        <div class="container text-center " >
-            <!-- <a href="#"><img class="resize-portrait img-circle  " src="img/portrait.jpeg" alt="portriat"></a> -->
-            <div class="letters ">
-            <h1> I'm
-            <span
-               class="txt-rotate"
-               data-period="2000"
-               data-rotate='[ "an aspiring developer", "an aspiring designer", "Francisco Aguilar" ]'>
-             </span>
-            </h1>
-          </div>
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
+      <div class="overlay">
+        <div class="parallax text-center">
+          <div class="parallax-pattern-overlay">
+            <div class="container text-center ">
+              <!-- <a href="#"><img class="resize-portrait img-circle  " src="img/portrait.jpeg" alt="portriat"></a> -->
 
-                <a href="#about" class="btn btn-skin btn-lg btn-scroll bounceInLeft">LEARN MORE</a>
+
+
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <a  id = "learn" class="btn btn-skin btn-lg btn-scroll bounceInLeft">Find OUT</a>
+
+                </div>
+              </div>
+              <div class="row">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="row">
+
+                <div id="typed-strings">
+                  <p>I AM <strong>FRANCISCO AGUILAR</strong></p>
+                  <p>I AM <em>a Front End Developer</em></p>
+                  <p>I AM <em>a Lifelong</em> Learner</p>
+                </div>
+                <div id = "letters"><span id="typed"></span></div>
+              </div>
 
             </div>
-            </div>
-          <div class="row ">
-            <div class="col-md-12">
-
           </div>
-        </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-</header>
+  </header>
 
   <nav class="navbar navbar-fixed-top ">
     <div class="container-fluid">
@@ -79,9 +81,9 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -94,8 +96,8 @@
         <div class="col-lg-8 col-lg-offset-2">
 
           <div class="section-heading text-center">
-              <h2>ABOUT ME</h2>
-              <hr>
+            <h2>ABOUT ME</h2>
+            <hr>
           </div>
 
         </div>
@@ -105,42 +107,42 @@
       <div class="row">
         <div class="col-md-6">
 
-          <img src="img/portrait.jpeg" class="resize-portrait img-center" alt="" >
+          <img src="img/portrait.jpeg" class="resize-portrait img-center">
         </div>
 
         <div class="col-md-6 ">
-              <div class="icon">
-                <i class="fa fa-graduation-cap rubberBand"></i>
-              </div>
-              <div class="icon-text">
-                <h3 class="txt-tl">Geek Wise Student</h3>
-                <p class="txt-para">Currently a geekwise student. Learning HTML and CSS, on the road to learning javascript and python.  </p>
-              </div>
+          <div class="icon">
+            <i class="fa fa-graduation-cap rubberBand"></i>
           </div>
-          <div class="col-md-6 ">
-                <div class="icon">
-                  <i class="fas fa-briefcase-medical pulse rubberBand"></i>
-                </div>
-                <div class="icon-text">
-                  <h3 class="txt-tl">EMT certified</h3>
-                  <p class="txt-para">Recently passed my EMT Class and i the process of taking my national registry.  </p>
-                </div>
-            </div>
-            <div class="col-md-6 ">
-                  <div class="icon">
-                    <i class="fas fa-fire rubberBand"></i>
-                  </div>
-                  <div class="icon-text">
-                    <h3 class="txt-tl">Wildland Firefighter</h3>
-                    <p class="txt-para">Summer Nights I spend them in the middle of nowhere, with nothing but the beautiful stars to admire.  </p>
-                  </div>
-              </div>
-              <div class="col-md-8 col-md-offset-2 text-center rubberBand">
-          <a href="#portfolio" class="btn btn btn-skin btn-lg btn-scroll">MY PORTFOLIO</a>
+          <div class="icon-text">
+            <h3 class="txt-tl">Geek Wise Student</h3>
+            <p class="txt-para">Currently a geekwise student. Learning HTML and CSS, on the road to learning javascript and python. </p>
+          </div>
         </div>
+        <div class="col-md-6 ">
+          <div class="icon">
+            <i class="fas fa-briefcase-medical pulse rubberBand"></i>
+          </div>
+          <div class="icon-text">
+            <h3 class="txt-tl">EMT certified</h3>
+            <p class="txt-para">Recently passed my EMT Class and i the process of taking my national registry. </p>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="icon">
+            <i class="fas fa-fire rubberBand"></i>
+          </div>
+          <div class="icon-text">
+            <h3 class="txt-tl">Wildland Firefighter</h3>
+            <p class="txt-para">Summer Nights I spend them in the middle of nowhere, with nothing but the beautiful stars to admire. </p>
+          </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2 text-center rubberBand">
+          <a href="#portfolio" class="btn btn btn-skin btn-lg btn-scroll">MY PORTFOLIO</a>
         </div>
       </div>
     </div>
+  </div>
 
 
 
@@ -151,23 +153,23 @@
         <div class="section-title center">
           <h2>Quote of the day</h2>
           <hr>
-        <p>“Without requirements or design, programming is the art of adding bugs to an empty text file.”</p>
+          <p>“Without requirements or design, programming is the art of adding bugs to an empty text file.”</p>
         </div>
+      </div>
     </div>
   </div>
-  </div>
 
 
-<div class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="section-heading text-center">
-            <h2>RECENT WORK</h2>
-            <hr>
-        </div>
+  <div class="p-0" id="portfolio">
+    <div class="container-fluid p-0">
+      <div class="section-heading text-center">
+        <h2>RECENT WORK</h2>
+        <hr>
+      </div>
 
-        <div class="row">
-          <div class="col-md-4 col-md-6">
-            <a class="portfolio-box" href="https://preview.c9users.io/francisco8/finalproject-caliswrapgarage/index.html">
+      <div class="row">
+        <div class="col-md-4 col-md-6">
+          <a class="portfolio-box" href="https://preview.c9users.io/francisco8/finalproject-caliswrapgarage/index.html">
               <img class="img-fluid img-thumbnail" src="img/portfolio/calis-capture.PNG" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -182,11 +184,11 @@
 
               </div>
             </a>
-          </div>
+        </div>
 
-          <div class="col-md-4 col-md-6 ">
-            <a class="portfolio-box " href="https://geekwiseb2.github.io/restaurante-franciscoaguilar/">
-              <img class="img-fluid img-thumbnail" src="img/portfolio/restaurante-capture.PNG" alt="">
+        <div class="col-md-4 col-md-6 ">
+          <a class="portfolio-box " href="https://geekwiseb2.github.io/restaurante-franciscoaguilar/">
+              <img class="img-fluid img-thumbnail" src="img/portfolio/pc-mockup-restaurant.PNG" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -198,9 +200,9 @@
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-md-4 col-md-6 ">
-            <a class="portfolio-box" href="https://geekwiseb2.github.io/pet-store-franciscoaguilar/">
+        </div>
+        <div class="col-md-4 col-md-6 ">
+          <a class="portfolio-box" href="https://geekwiseb2.github.io/pet-store-franciscoaguilar/">
               <img class="img-fluid img-thumbnail" src="img/portfolio/petstore-capture.PNG" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -213,89 +215,105 @@
                 </div>
               </div>
             </a>
-          </div>
-    </div>
-          <div class="row">
-              <div class="col-md-8 col-md-offset-2 text-center ">
-                <a  href="#contact" class="pbtn btn btn-skin btn-lg btn-scroll">Contact</a>
-              </div>
-          </div>
         </div>
-  </div>
-
-
-
-<!-- Contact Section -->
-<div id="contact" class="text-center">
-  <div class="overlay">
-    <div class="container">
-      <div class="section-title center">
-        <h2>Get In Touch</h2>
-        <hr>
       </div>
-      <div class="col-md-8 col-md-offset-2">
-        <form name="sentMessage" id="contactForm" validate>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="form-group">
-                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <input type="text" id="phone" novalidate class="form-control" placeholder="Phone Number">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <input type="email" id="email" class="form-control" placeholder="Email" required>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-            <p class="help-block text-danger"></p>
-          </div>
-
-          <div id="success"></div>
-          <button type="submit" class="btn btn-default">Send Message</button>
-        </form>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center ">
+          <a href="#contact" class="pbtn btn btn-skin btn-lg btn-scroll">Contact</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
-<!-- start section footer -->
-<div id="footer" class="text-center">
-  <div class="container">
-    <div class="info">
-      <p>FRANCISCO AGUILAR <hr> 1345 skywalk Fresno CA. <hr> (559)123-45-56</p>
-    </div>
-    <div class="socials-media text-center">
 
-      <ul class="list-unstyled">
-        <li><a href="https://www.facebook.com/"><i class=" fa fa-facebook-square"></i></a></li>
-        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
-        <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-square"></i></a></li>
-      </ul>
+
+
+  <!-- Contact Section -->
+  <div id="contact" class="text-center">
+    <div class="overlay">
+      <div class="container">
+        <div class="section-title center">
+          <h2>Get In Touch</h2>
+          <hr>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="text" id="phone" novalidate class="form-control" placeholder="Phone Number">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="email" id="email" class="form-control" placeholder="Email" required>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+
+            <div id="success"></div>
+            <button type="submit" class="btn btn-default">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="info">
+        <p>FRANCISCO AGUILAR
+          <hr> 1345 skywalk Fresno CA.
+          <hr> (559)123-45-56</p>
+      </div>
+      <div class="socials-media text-center">
 
-<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
-<script src="js/firebase.js" type="text/javascript">
-</script>
-<!-- <script src="js/bootstrap.min.js" type="text/javascript"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src='js/scripts.js'></script>
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/"><i class=" fa fa-facebook-square"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
+          <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-square"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+  <script src="js/firebase.js" type="text/javascript">
+  </script>
+
+  <!-- <script src="js/bootstrap.min.js" type="text/javascript"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='js/scripts.js'></script>
+  <script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 20,
+      backSpeed: 0,
+      cursorChar: '_',
+      shuffle: true,
+      smartBackspace: false,
+      loop: true,
+      onStart: function(pos, self) {
+        prettyLog('onStart ' + pos + ' ' + self)
+      },
+    });
+  </script>
 
 
-
-<!-- ON SCREEN LETTERS -->
-<!-- <script>
+  <!-- ON SCREEN LETTERS -->
+  <!-- <script>
   var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -353,5 +371,8 @@
     document.body.appendChild(css);
   };
 </script> -->
+
+
 </body>
+
 </html>
