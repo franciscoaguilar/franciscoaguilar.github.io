@@ -21,7 +21,6 @@
 }
 
 
-
 /* navbar header */
 .navbar-header{
 	background-color: transparent;
@@ -30,7 +29,12 @@
 	margin-right: 30px
 }
 
-
+.navbar{
+  margin-bottom: 0px;
+}
+.navbar-header{
+  margin-bottom: 0px;
+}
 nav ul li a {
   padding: 1px 0 0 0;
 	margin-left: 30px;
