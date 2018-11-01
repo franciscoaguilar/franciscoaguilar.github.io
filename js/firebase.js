@@ -1,7 +1,7 @@
 
   // Initialize Firebase
   var config = {
-    apiKey: "yk",
+    apiKey: "A",
     authDomain: "franciscoaguilar-portfolio.firebaseapp.com",
     databaseURL: "https://franciscoaguilar-portfolio.firebaseio.com",
     projectId: "franciscoaguilar-portfolio",
