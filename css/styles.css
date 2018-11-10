@@ -1,11 +1,10 @@
-button{
+button {
  border: linear;
    outline: 0;
-     font-weight: 900;
+   font-weight: 900;
    display: inline-block;
    padding: 10px 25px;
    color: white;
-
    background-color: transparent;
    text-align: center;
    cursor: pointer;
@@ -15,29 +14,6 @@ button:hover{
   background-color: purple;
   color: black;
 }
- #jumbotron button {
-    margin-top: 17vh;
-
- 	}
-  #jumbotron button:hover{
-    background-color: purple;
-    color: black;
-  }
-
-
-
-#jumbotron #letters{
-
-     display: none;
-     font-size: 40px;
-    height: 50%;
-}
- .fa-github{
-  font-size: 40px;
-    margin-top: 17vh;
-}
-
-
 /* navbar header */
 .navbar-header{
 	background-color: transparent;
@@ -73,44 +49,48 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
+ #jumbotron button {
+    margin-top: 17vh;
+    font-weight: 900;
 
-.intro {
-	display: table;
-	width: 100%;
-	height: 50vh;
-	text-align: center;
-	color: #fff;
-	background: url(../img/fire-bg.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+ 	}
+  #jumbotron button:hover{
+    background-color: purple;
+    color: black;
+  }
+  .intro {
+  	display: table;
+  	width: 100%;
+  	height: 50vh;
+  	text-align: center;
+  	color: #fff;
+  	background: url(../img/fire-bg.jpg) no-repeat center center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+  }
+  .intro .overlay {
+  	padding: 10px 0;
+  	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100&0.85+0,0.85+100 */
+  	background: -moz-linear-gradient(left, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* FF3.6-15 */
+  	background: -webkit-linear-gradient(left, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+  	background: linear-gradient(to right, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', endColorstr='#d94977c2', GradientType=1 ); /* IE6-9 */
+  height: inherit;
+  }
+
+
+#jumbotron #letters{
+
+     display: none;
+     font-size: 40px;
+    height: 50%;
 }
-.intro .overlay {
-	padding: 10px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100&0.85+0,0.85+100 */
-	background: -moz-linear-gradient(left, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(107,77,168,0.85) 0%, rgba(73,119,194,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', endColorstr='#d94977c2', GradientType=1 ); /* IE6-9 */
-height: inherit;
+ .fa-github{
+  font-size: 40px;
+    margin-top: 17vh;
 }
-
-
-
-
-/* --- Parallax --- */
-/* .parallax {
-	text-align:center;
-	background-position:center center;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-attachment:fixed !important;
-	overflow:hidden;
-
-} */
-
-
 
 
 /* ABOUT */
@@ -128,12 +108,13 @@ height: inherit;
 #about a{
 	color: white;
 	font-weight: 600;
-	background-color: black;
 	margin: auto;
 }
 #about button {
 
     margin-bottom: 62px;
+    color: white;
+     font-weight: 900;
 
 	}
   #about button:hover{
@@ -192,28 +173,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 	color: #fff;
 }
 
-#contact i.fa {
-	color: #121d1f;
-	margin-bottom: 10px;
-}
-#contact .text-danger {
-	color: #E87E04;
-	text-align: left;
-}
-#contact p{
-	font-size: 20px;
-}
-label {
-	font-size: 12px;
-	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
-	float: left;
-}
 
 /* PORTFOLIO */
 #portfolio .p-0 button {
 
     margin-bottom: 40px;
+    color: white;
+     font-weight: 900;
 
 	}
 
@@ -236,50 +202,14 @@ label {
   max-width: 650px;
   margin: 50px auto;
 }
-
-
-.portfolio-box .portfolio-box-caption {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  opacity: 0;
-  color: #FFF;
-  background: rgba(34, 0, 0, 0.4);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+ .portfolio .color-gray{
+  background-color: #f7f7f7;
+ }
+.portfolio-box hr{
+  color: black;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-  text-align: center;
-}
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  padding: 0 15px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-size: 18px;
-}
-
-.portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
-}
 
 /* Contact Section */
 #contact {
@@ -373,6 +303,10 @@ color: #2c3e50;
   background-color: green;
 }
 
+
+
+
+
 #footer {
   background: #f7f7f7;
   padding-top: 50px;
@@ -455,7 +389,7 @@ color: #2c3e50;
   }
 
 
-  #portfolio button:hover{
+  #portfolio button a:hover{
    background-color: purple;
    color: black;
  }
