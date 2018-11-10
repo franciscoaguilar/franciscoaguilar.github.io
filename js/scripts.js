@@ -50,10 +50,23 @@ learn.addEventListener('click', () =>
   letters.style.display = 'flex';
   letters.style.justifyContent = 'center';
   letters.style.alignItems = 'center';
-  
+
   console.log('apple');
   learn.style.display = 'none';
 })
+
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 20,
+    backSpeed: 0,
+    cursorChar: '_',
+    shuffle: true,
+    smartBackspace: false,
+    loop: true,
+    onStart: function(pos, self) {
+      prettyLog('onStart ' + pos + ' ' + self)
+    },
+  });
 
 // $(function () {
 //   showText("#msg", "Hello, World!", 0, 200);
