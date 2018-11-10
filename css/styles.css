@@ -1,12 +1,29 @@
+button{
+ border: linear;
+   outline: 0;
+     font-weight: 900;
+   display: inline-block;
+   padding: 10px 25px;
+   color: white;
 
-
- #jumbotron .btn{
-	color: white;
-	font-weight: 600;
-	background-color: black;
-  margin-top: 17vh;
-
+   background-color: transparent;
+   text-align: center;
+   cursor: pointer;
+   z-index: 1;
 }
+button:hover{
+  background-color: purple;
+  color: black;
+}
+ #jumbotron button {
+    margin-top: 17vh;
+
+ 	}
+  #jumbotron button:hover{
+    background-color: purple;
+    color: black;
+  }
+
 
 
 #jumbotron #letters{
@@ -114,9 +131,16 @@ height: inherit;
 	background-color: black;
 	margin: auto;
 }
-#about .btn{
-	margin-bottom: 62px;
-}
+#about button {
+
+    margin-bottom: 62px;
+
+	}
+  #about button:hover{
+   background-color: purple;
+   color: black;
+ }
+
 
 
 .icon {
@@ -187,9 +211,12 @@ label {
 }
 
 /* PORTFOLIO */
-#portfolio .p-0 .btn {
-  margin-bottom: 40px;
-}
+#portfolio .p-0 button {
+
+    margin-bottom: 40px;
+
+	}
+
 #portfolio  .p-0 {
 
  max-height: auto;
@@ -209,6 +236,7 @@ label {
   max-width: 650px;
   margin: 50px auto;
 }
+
 
 .portfolio-box .portfolio-box-caption {
   position: absolute;
@@ -328,6 +356,7 @@ label {
 	box-shadow: transparent;
 }
 
+
 .form-control::-webkit-input-placeholder {
 color: #2c3e50;
 }
@@ -421,13 +450,16 @@ color: #2c3e50;
 
 /* when full screen */
 @media (min-width: 768px ){
+  .portfolio .img-responsive{
+    margin: 0!important;
+  }
 
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 18px;
-  }
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 22px;
-  }
+
+  #portfolio button:hover{
+   background-color: purple;
+   color: black;
+ }
+
 
 	.resize-portrait{
 		max-height: 40vh;
